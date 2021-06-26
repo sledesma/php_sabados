@@ -7,7 +7,7 @@
 include "php/variables.php";
 
 // Inicializar las variables necesarias
-$estilos = $_GET["style"];
+$estilos = $_GET["style"]; // index.php?style=estilos2.css
 $colorTexto = "#333";
 ?>
 <!DOCTYPE html>

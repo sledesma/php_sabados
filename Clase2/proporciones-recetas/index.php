@@ -2,13 +2,12 @@
 // Estructuras de datos
 include "php/db.php";
 
-$recetaElegida = "Torta de calabaza";
+$recetaElegida = "Torta de calabaza"; // La receta se pone a mano en el código
 $ingredientes = [];
-
-$recetaActual = 0;
 
 // Algoritmo
 // Tenemos la receta elegida (string) y las recetas (array)
+$recetaActual = 0;
 while($recetaActual < count($recetas)) {
   if($recetas[$recetaActual]["Nombre"] == $recetaElegida) {
     $ingredientes = $recetas[$recetaActual]["Ingredientes"];
@@ -65,7 +64,7 @@ while($recetaActual < count($recetas)) {
           }
         ?>
         </select>
-        <input type="number" name="nNuevaHarina" id="">
+        <input type="number" name="nNuevaCantidad" id="">
       </div>
       <div>
         <button>Calcular Propocional</button>
