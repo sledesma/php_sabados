@@ -1,0 +1,3 @@
+500gr de harina     => 430gr de harina  ==> 0.86
+3 huevos            => 3 * 0.86     => 2.58 huevos
+1 Lt leche          => 1 * 0.86     0.86 => 0.86lts leche
