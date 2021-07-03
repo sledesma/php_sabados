@@ -17,3 +17,15 @@ function home_obtener_posts($posts) {
 
   return $salida;
 }
+
+function post_obtener_post($posts, $id) {
+  $salida = [];
+
+  for ($i=0; $i < count($posts); $i++) { 
+    if($i == $id) {
+      $salida = $posts[$i];
+    }
+  }
+
+  return $salida;
+}
