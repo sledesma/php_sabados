@@ -58,6 +58,7 @@ $postView = home_obtener_posts($posts);
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <?php 
+                    var_dump($postView);
                     for ($i=0; $i < count($postView); $i++) { 
                         $postActual = $postView[$i];  
                     ?>
