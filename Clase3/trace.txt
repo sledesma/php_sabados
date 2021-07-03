@@ -1,0 +1,29 @@
+[En el navegador] Accedemos a http://localhost/php_sabados/Clase3/
+[En PHP] Se carga index.php
+[En PHP] Se incluye php/data.php
+[En PHP] Tenemos disponible $posts con todos los posts
+[En PHP] Se incluye php/functions.php
+[En PHP] Tenemos disponible home_obtener_posts y post_obtener_post
+[En PHP] Se ejecuta home_obtener_posts pasandole $post como parametro
+[En PHP] Se almacena su resultado en $postView
+[En PHP] Se lee el bucle for de $postView
+[En PHP] Este bucle recorre todos los items de $postView
+[En PHP] Para cada ítem, añade al HTML resultante el div y sus elementos
+[En PHP] Se le pasa a cada ítem un link a su <a> que lo lleve a la página de post correspondiente
+[En HTML] Se toma borra el código PHP y se toma solo su resultado
+[En HTML] El código generado contendrá todos los div generados por PHP
+[Fin] Se manda el HTML resultante al navegador
+
+[En el navegador] Accedemos a http://localhost/php_sabados/Clase3/post.php?id=0
+[En PHP] Se carga post.php
+[En PHP] Se incluye php/data.php
+[En PHP] Tenemos disponible $posts con todos los posts
+[En PHP] Se incluye php/functions.php
+[En PHP] Tenemos disponible home_obtener_posts y post_obtener_post
+[En PHP] Se obtiene el parámetro id pasado por URL
+[En PHP] Se ejecuta post_obtener_post con $posts (data/) y el parametro pasado por id
+[En PHP] Tenemos el post actual, filtrando todos los post que tengo en data con el id pasado por URL
+[En PHP] Rellenamos los campos de la plantilla
+[En HTML] Se toma borra el código PHP y se toma solo su resultado
+[En HTML] El código generado contendrá todos el código RESULTANTE de PHP
+[Fin] Se manda el HTML resultante al navegador
