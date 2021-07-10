@@ -1,0 +1,19 @@
+PHP cuenta con 4 funciones para incluir código
+incluir código = añadir código al código que se está ejecutando ANTES de que éste se ejecute
+Imprescindible = PHP Debe DETENERSE si no encuentra el archivo
+
+1.require_once
+¿Es imprescindible?         =>  SI
+¿Se necesita una sola vez?  =>  SI
+
+2.require
+¿Es imprescindible?         =>  SI
+¿Se necesita una sola vez?  =>  NO
+
+3.include_once
+¿Es imprescindible?         =>  NO
+¿Se necesita una sola vez?  =>  SI
+
+4.include
+¿Es imprescindible?         =>  NO
+¿Se necesita una sola vez?  =>  NO

@@ -6,7 +6,8 @@
 		<div class=" contact_right">
 			<h3>Contacto</h3>
 			<div class="contact-form">
-				<form action="#" method="post">
+				<form action="index.php" method="post">
+					<input type="hidden" name="action" value="contacto">
 					<input type="text" class="textbox" placeholder="Nombre" name="nombre">
 					<input type="text" class="textbox" placeholder="E-Mail" name="email">
 					<textarea placeholder="Mensaje" name="mensaje"></textarea>

@@ -6,59 +6,50 @@
 **/
 
 // Determinar la petición actual
-$accion = $_GET['a'];
+$metodo = $_SERVER['REQUEST_METHOD'];
 
 // Enviar la respuesta correspondiente a dicha petición
-require_once "template/header.php";
-require_once $accion.".php";
-require_once "template/footer.php";
+switch($metodo) {
+  case "GET":
+    $accion = isset($_GET['a']) ? $_GET['a'] : false; // condicion ? expresion_true : expresion_false
+    $templates = [
+      'contacto',
+      'home',
+      'ingreso',
+      'producto',
+      'productos',
+      'registro'
+    ];
 
-/*
-
-PHP cuenta con 4 funciones para incluir código
-incluir código = añadir código al código que se está ejecutando ANTES de que éste se ejecute
-Imprescindible = PHP Debe DETENERSE si no encuentra el archivo
-
-1.require_once
-¿Es imprescindible?         =>  SI
-¿Se necesita una sola vez?  =>  SI
-
-2.require
-¿Es imprescindible?         =>  SI
-¿Se necesita una sola vez?  =>  NO
-
-3.include_once
-¿Es imprescindible?         =>  NO
-¿Se necesita una sola vez?  =>  SI
-
-4.include
-¿Es imprescindible?         =>  NO
-¿Se necesita una sola vez?  =>  NO
-
-
-*/
-
-
-/*
-switch($accion) {
-  case 'home':
-    include "home.php";
+    require_once "functions.php";
+    require_once "resources/layout/header.php";
+    if($accion != false) {
+      if(array_search($accion, $templates) !== false) {
+        require_once "resources/pages/".$accion.".php";
+      } else {
+        header('Location: index.php');
+      }
+    } else {
+      require_once "resources/pages/home.php";
+    }
+    require_once "resources/layout/footer.php";
     break;
-  case 'ingreso':
-    include "ingreso.php";
-    break;
-  case 'producto':
-    include "producto.php";
-    break;
-  case 'productos':
-    include "productos.php";
-    break;
-  case 'registro':
-    include "registro.php";
-    break;
-  default:
-    include "home.php";
+
+  case "POST":
+    $postAction = $_POST['action'];
+
+    switch($postAction) {
+
+      case 'contacto':
+        // procesarFormulario
+        if(strlen($_POST['nombre']) < 3) {
+          echo "El nombre tiene menos de tres caracteres";
+        } else {
+          echo "Nombre correcto";
+        }
+        break;
+
+    }
+
     break;
 }
-*/
-
