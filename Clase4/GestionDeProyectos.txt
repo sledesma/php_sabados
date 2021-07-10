@@ -1,0 +1,30 @@
+DOS FORMAS EN LAS CUALES PUEDEN ABORDAR UN TRABAJO
+> Gestión predictiva
+> Gestión ágil
+
+
+PLAN => ALCANCE = QUE HAGO (fin) + COMO LO HAGO (medios)
+
+GESTION PREDICTIVA
+* ES LINEAL
+* Se centra en la planificacion
+* Inicio - Plan - Implementa - Evalua - Cierre (PMI)
+* Poca tolerancia al riesgo
+* Comprende las generalidades y "baja" hacia lo particular
+* Más deductivo
+
+
+GESTION ITERATIVA <= Para el curso
+* ES CICLICA
+* Se centra más en la ejecución y el examen
+* Plan - Hacer - Verificar - Mejorar (Ciclo de Deming)
+* Mucha tolerancia al riesgo
+* Empieza en un caso particular y "sube" hacia cosas más abarcativas
+* Más inductivo
+
+
+REDACCION => AL FINAL DE LA ITERACION / DE TODO EL PROYECTO
+PLANIFICACION (Ir juntando ideas, etc.) => DESDE EL COMIENZO
+
+
+

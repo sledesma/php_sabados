@@ -1,0 +1,16 @@
+COMERCIOIT
+
+¿QUE VAMOS A HACER?
+> Un catálogo online
+> Una página inicial donde se vean los últimos productos
+> Una página detalle donde se vea un solo producto
+> Un administrador de productos al cual puedas ingresar con usuario / clave (Podes registrar)
+> Una página de contacto
+
+¿COMO LO VAMOS A HACER?
+> Utilizar un desarrollo más funcional (NO vamos a usa P.O.O.)
+> Conectarse con una base de datos MySQL
+> Utilizar SESIONES para el manejo del login
+> Dividir la plantilla base en varios archivos
+> Partimos de un diseño HTML/CSS/JS
+> Renderizado del lado del servidor (el html se va a estar construyendo en PHP)
