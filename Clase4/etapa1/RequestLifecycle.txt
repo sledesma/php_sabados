@@ -1,0 +1,5 @@
+1. Se recibe las peticiones en index.php
+2. Obtener parametro a por GET
+3. Cargar header.php
+4. Cargar el archivo cuyo nombre sea el parametro pasado
+5. Cargar footer.php
