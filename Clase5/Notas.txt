@@ -1,0 +1,6 @@
+Paradigmas más utilizados
+ Orientado a Objetos
+ Orientado a Aspectos
+ Funcional
+ Reactivo / Orientado a Eventos
+ Estructural / Secuencial (variables, if, else, etc. etc.)
