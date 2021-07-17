@@ -1,3 +1,10 @@
+<!--
+Nota (base 10):
+¿Se logró? SI => 6 (de 6)
+¿Cómo se logró? => 2 (de 4)
+
+FINAL => 8 (de 10)
+-->
 <h2>Laboratorio #1: Min, Max y Promedio de Facturación</h2>
 <?php
     $fact = [
@@ -17,12 +24,14 @@
     //var_dump($fact);
     //echo max($fact);
     /*
-    tengo creado el arreglo, almaceno la función en una variable y después lo paso por un bucle "foreach". Este tiene una pregunta que si la variable fact tomando la clave "mes" es igual a la variable max o min y así nos dice cuál es el valor correspondiente
+    tengo creado el arreglo, almaceno la función en una variable y después lo paso por un bucle "foreach". Este tiene una pregunta que si la variable fact tomando la clave "mes" es igual a la variable max o min y así nos dice cuál es el valor correspondiente.
     */
 
     /*$fact_format(
         int $decimals = 0,
     );*/
+
+    ## Tratándose de un ejercicio de práctica, yo hubiese hecho el proceso "a mano", en vez de utilizar min y max
     $max = max($fact);
     $min = min($fact);
 
@@ -36,16 +45,13 @@
         if($fact[$mes]==$max){
             echo "El valor máximo se encuentra en ".$mes . " y su valor es " . $valor;
         }
-    }
-    echo"<br>";
-    foreach($fact as $mes => $valor){
         if($fact[$mes]==$min){
             echo "El valor mínimo se encuentra en ".$mes . " y su valor es " . $valor;
         }
     }
     echo"<br>";
 
-    $media= array_sum($fact)/count($fact);
+    $media= array_sum($fact)/count($fact);## Tratándose de un ejercicio de práctica, yo hubiese hecho el proceso "a mano", en vez de utilizar min y max
     echo "El valor promedio de la facturación es ".$media;
  
     echo"<hr>";
@@ -60,13 +66,13 @@
         "Carlos"
     ];
 
-    sort($nombres);
+    sort($nombres); ## Lo mismo que antes
     //dump($nombres);
     /*$cantidad = sizeof($nombres);
     for($i=0; $i<$cantidad; $i++){
         echo "<p> $i = $nombres[$i]</p>";
     };*/
-    $cantidad = sizeof($nombres);
+    $cantidad = sizeof($nombres); ## ¿Por qué no count()?
 
 
 ?>
@@ -78,14 +84,16 @@
     </tr>
 
 	<tr>
-		<td align="center"><?php   for($i=0; $i<$cantidad; $i++){
-                    echo "<p> $i</p>";
-                    }; ?>
+    <!-- Podrías optimizar el proceso con un solo bucle. Cuando las cabeceras
+    son las mismas, podes unir ambas implementaciones en un solo bucle -->
+    <?php   for($i=0; $i<$cantidad; $i++){ ?>
+		<td align="center">
+            <?php echo "<p> $i</p>"; ?>
         </td>
-        <td align="center"><?php   for($i=0; $i<$cantidad; $i++){
-                    echo "<p> $nombres[$i]</p>";
-                    }; ?>
+        <td align="center">
+            <?php echo "<p> $nombres[$i]</p>"; ?>       
         </td>
+        <?php }; ?>
 	</tr>
 </table>
 
@@ -114,6 +122,8 @@ $alumnos = [
 </tr>
 
 <tr>
+    <!-- Podrías optimizar el proceso con un solo bucle. Cuando las cabeceras
+    son las mismas, podes unir ambas implementaciones en un solo bucle -->
     <td align="center"><?php foreach($alumnos as $nombre => $calificacion){echo "<p> $nombre </p>";
     }; ?> </td>
     <td align="center"><?php foreach($alumnos as $nombre => $calificacion){echo "<p> $calificacion </p>";
@@ -122,22 +132,23 @@ $alumnos = [
 </table>
 
 <?php
-    $notamax=max($alumnos);
-    $notamin=min($alumnos);
+    $notamax=max($alumnos); ## Tratándose de un ejercicio de práctica, yo hubiese hecho el proceso "a mano", en vez de utilizar min y max
+    $notamin=min($alumnos);## Tratándose de un ejercicio de práctica, yo hubiese hecho el proceso "a mano", en vez de utilizar min y max
     
+    /* Podrías optimizar el proceso con un solo bucle. Cuando las cabeceras
+    son las mismas, podes unir ambas implementaciones en un solo bucle */
     foreach($alumnos as $nombre => $calificacion){
         if($alumnos[$nombre]==$notamax){
             echo "El alumno se llama ".$nombre . " y su calificación es " . $calificacion;
+            echo "<br />";
         }
-    };
-echo "<br>";
-    foreach($alumnos as $nombre => $calificacion){
         if($alumnos[$nombre]==$notamin){
             echo "El alumno se llama ".$nombre . " y su calificación es " . $calificacion;
+            echo "<br />";
         }
     };
-echo "<br>";
-    $notamedia= array_sum($alumnos)/count($alumnos);
+
+    $notamedia= array_sum($alumnos)/count($alumnos); ## Tratándose de un ejercicio de práctica, yo hubiese hecho el proceso "a mano", en vez de utilizar min y max
     echo "El promedio de las calificaciones es ".$notamedia;
 ?>
 
