@@ -13,6 +13,18 @@
 $manejador = fopen($ruta, $modo);
 
 /**
+ * fclose()
+ * 
+ * Sirve para: CERRAR UN ARCHIVO - LIBERA LA MEMORIA - IMPORTANTE PARA EL RENDIMIENTO
+ * Paramentros:
+ *  $manejador (resource) - El resultado de fopen()
+ * Retorno:
+ *  Nada
+ */
+fclose($manejador);
+
+
+/**
  * fgetcsv()
  * 
  * Sirve para: Leer la SIGUIENTE fila de un archivo .csv
@@ -34,6 +46,7 @@ $fila = fgetcsv($manejador);
  *  Número en caso de éxito o FALSE en caso de error
  */
 fputcsv($manejador, $campos);
+
 
 /**
  * fread()
@@ -59,14 +72,4 @@ $texto = fread($manejador, $cantidadBytes);
  */
 fwrite($manejador, $contenido);
 
-/**
- * fclose()
- * 
- * Sirve para: CERRAR UN ARCHIVO - LIBERA LA MEMORIA - IMPORTANTE PARA EL RENDIMIENTO
- * Paramentros:
- *  $manejador (resource) - El resultado de fopen()
- * Retorno:
- *  Nada
- */
-fclose($manejador);
 
