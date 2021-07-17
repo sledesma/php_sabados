@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * $ruta (string) - La ruta del archivo .csv
+ * 
+ * Retorna: un array asociativo en donde las claves se obtienen a partir de la primera fila
+ */
 function csv_read_all($ruta) {
   $stream = fopen($ruta, 'r');
   $cabeceras = false;
