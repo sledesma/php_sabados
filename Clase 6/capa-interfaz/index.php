@@ -57,7 +57,7 @@
 		</div>
 
     <div class="modal fade" id="frmNuevoJuego" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <form action="http://google.com" method="GET">
+      <form action="capa-procesos/formulario_alta.php" method="POST">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -66,7 +66,7 @@
           <div class="modal-body">
               <div class="form-group">
                 <label for="codArticulo">Codigo de artículo</label>
-                <input type="text" class="form-control" id="codArticulo" name="codArt">
+                <input type="text" class="form-control" id="codArticulo" name="codArticulo">
               </div>
 
               <div class="form-group">
