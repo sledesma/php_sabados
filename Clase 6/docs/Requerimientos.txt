@@ -1,0 +1,17 @@
+ENTREVISTA INICIAL CON EL CLIENTE
+Una empresa de venta de videojuegos necesita un programa para gestionar sus ventas. Como primera versión de ese programa, se requiere una página en donde se vean todos los juegos y un formulario para cargar un nuevo juego. Cada juego contiene un código de artículo, el género, el nombre, la fecha de alta y el stock.
+
+
+1. MODELO DE DATOS
+Juego (
+  codigo_art TEXT,
+  genero TEXT,
+  nombre TEXT,
+  fecha_alta TIMESTAMP DEFAULT current_timestamp(),
+  stock INT
+)
+
+2. INTERFAZ DE USUARIO
+  Browser
+    - Pagina inicial donde se vean todos los juegos
+    - Pagina de nuevo producto

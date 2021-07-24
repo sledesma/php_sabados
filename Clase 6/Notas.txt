@@ -1,0 +1,8 @@
+Framework => Conjunto de Librerías
+
+PHP es casi todo Framework
+* Laravel
+- Symphony
+- Zend
+- Cake
+- Code Igniter

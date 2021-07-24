@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<title>Gestion de Tienda || Inicio</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<h2>Gestion de tienda</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#frmNuevoJuego">
+            Nuevo juego
+          </button>
+				</div>
+			</div>
+
+			<div class="row">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Cod. Art</th>
+							<th scope="col">Nombre</th>
+							<th scope="col">Genero</th>
+							<th scope="col">Stock</th>
+							<th scope="col">F. Alta</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Age of Empires II</td>
+							<td>Estrategia</td>
+							<td>10</td>
+							<td>2021-07-24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+    <div class="modal fade" id="frmNuevoJuego" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="POST">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+	</body>
+</html>
