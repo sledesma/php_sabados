@@ -7,6 +7,4 @@ codArticulo TEXT,
 genero TEXT,
 nombre TEXT,
 stock INT,
-fechaAlta TIMESTAMP DEFAULT current_timestamp(),
-primary key(codArticulo)
-)
+fechaAlta TIMESTAMP DEFAULT current_timestamp()
