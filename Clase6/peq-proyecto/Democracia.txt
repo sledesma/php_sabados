@@ -1,0 +1,12 @@
+1. Deljar el pequeño proyecto acá y ponernos con ComercioIT (usaríamos MySQLi en otro contexto)
+
+
+2. Dejar ComercioIT como tarea, y seguir profundizando en el pequeño proyecto que hicimos actualmente
+  - Hacer el trace / paso a paso
+  - Ver un poco de Exceptions / Try-catch
+  - Ampliar la interfaz para soportar Bajas y Modificaciones
+  - Ampliar la interfaz para soportar diferentes reportes
+
+
+3. Repaso de ejercicios aislados (sin proyecto de por medio) de todo lo visto.
+3
