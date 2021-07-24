@@ -1,0 +1,13 @@
+DOS OPERACIONES
+
+1. Conectar: ABRIR UNA COMUNICACIÓN CON EL SGBD
+mysqli_connect => Crea una conexión a un motor de base de datos
+
+2. Consultar: EJECUTAR CODIGO SQL EN LA CONEXIÓN
+mysqli_query => Ejecuta una consulta en una conexión
+  SI SE LEYERON DATOS
+    mysqli_fetch_assoc => Transformar los datos leídos en un array
+  SI SE ESCRIBIERON DATOS
+    mysqli_affected_rows => Ver la cantidad de filas afectadas (cambios realizados)
+
+EXTENSION MySQLi => Una forma para conectarme a MYSQL mediante funciones (tiene un uso muy simple)

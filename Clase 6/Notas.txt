@@ -6,3 +6,7 @@ PHP es casi todo Framework
 - Zend
 - Cake
 - Code Igniter
+
+
+ORM => Mapeo Objeto-Relación
+

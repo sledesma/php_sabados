@@ -16,6 +16,7 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row">
+				
 				<h2>Gestion de tienda</h2>
 			</div>
 
@@ -39,13 +40,17 @@
 						</tr>
 					</thead>
 					<tbody>
+						<?php for ($i=0; $i < count($juegos); $i++) { 
+							$actual = $juegos[$i];
+						?>
 						<tr>
-							<th scope="row">1</th>
-							<td>Age of Empires II</td>
-							<td>Estrategia</td>
-							<td>10</td>
-							<td>2021-07-24</td>
+							<th scope="row"><?php echo $actual['codArticulo'] ?></th>
+							<td><?php echo $actual['nombre'] ?></td>
+							<td><?php echo $actual['genero'] ?></td>
+							<td><?php echo $actual['stock'] ?></td>
+							<td><?php echo $actual['fechaAlta'] ?></td>
 						</tr>
+						<?php } ?>
 					</tbody>
 				</table>
 			</div>
