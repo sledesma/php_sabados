@@ -1,9 +1,10 @@
 <?php
 
 function controllers_productos_inicio() {
-  require_once 'data/productos.php';
+  require_once 'data/conexion.php';
+  require_once 'data/tablas/productos.php';
 
-  $productos = data_productos_getall();
+  $productos = data_productos_getall($dbConnection);
   require_once 'pages/productos/inicio.php';
 }
 
