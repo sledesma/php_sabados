@@ -2,7 +2,7 @@
 
 require_once 'csv.php'; // Clase 5
 
-if(isset($_GET['sym'])) { // Clase 1/2
+if(isset($_GET['sym'])) { // Clase 1/2 - Verifica si una clave existe en un array
 
   $ruta = 'http://clasico.rava.com/empresas/precioshistoricos.php?e='.urlencode($_GET['sym']).'&csv=1';
 

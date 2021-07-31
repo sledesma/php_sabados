@@ -1,0 +1,22 @@
+SESIONES Y COOKIES
+
+Dos tipos de comunicacion
+  1. Toda la información necesaria está en la comunicacion actual.
+  2. Toda la información necesaria NO está UNICAMENTE en la comunicacion actual.
+
+Llevar esto a HTTP y PHP.
+
+HTTP ES UN PROTOCOLO SIN ESTADO: No soporta información más allá de la ofrecida en la comunicacion actual
+ - Solamente soporta el primer tipo de comunicacion
+
+Sin sesion iniciada 
+GET http://misitio => Inicio sesión
+
+Con sesion iniciada
+GET http://misitio => Mi dashboard
+
+
+SESIONES => DATOS EXTERNOS A LA COMUNICACION ACTUAL GUARDADOS EN EL SERVIDOR (especifico de PHP)
+COOKIES => DATOS EXTERNOS A LA COMUNICACION ACTUAL GUARDADOS EN EL CLIENTE (general a todos los leng.)
+
+LAS SESIONES Y LAS COOKIES SIRVEN PARA GUARDAR DATOS ENTRE PETICIONES
