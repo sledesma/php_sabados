@@ -1,9 +1,12 @@
 <?php
 
+// Router
+
 session_start();
 
 require_once 'controllers/productos.php';
 require_once 'controllers/admin.php';
+
 
 switch($_SERVER['REQUEST_METHOD']) {
   // Peticiones GET
@@ -44,11 +47,38 @@ switch($_SERVER['REQUEST_METHOD']) {
     }
     break;
 
+    // Peticiones POST
     case 'POST':
 
       switch($_POST['action']) {
 
-        
+        case 'admin_carga_masiva':
+          controllers_admin_cargamasiva();
+          break;
 
       }
 }
+
+
+
+
+/*
+$decision = [
+
+  'GET' => [
+    'ver_carrito' => 'controllers_productos_vercarrito',
+    'agregar_carrito' => 'controllers_productos_agregaralcarrito'
+  ],
+
+  'POST' => []
+
+];
+
+$params = $_GET;
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $params = $_POST;
+}
+
+call_user_func($decision[$_SERVER['REQUEST_METHOD']][$params['action']]);
+*/

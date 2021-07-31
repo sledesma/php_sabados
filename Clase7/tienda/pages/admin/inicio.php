@@ -13,8 +13,8 @@
     <h4>Carga de datos</h4>
     <div><button>Nuevo producto</button></div>
     <div>
-      <form action="index.php">
-        <input type="hidden" name="admin_carga_masiva">
+      <form method="POST" action="index.php" enctype="multipart/form-data">
+        <input type="hidden" name="action" value="admin_carga_masiva">
         Seleccione el CSV a cargar:
         <input type="file" name="archivoCSV">
         <button>Realizar carga masiva</button>
