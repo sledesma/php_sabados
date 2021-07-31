@@ -7,10 +7,19 @@
   <title>Document</title>
 </head>
 <body>
-  <?php foreach ($productos as $producto) { ?>
-    <div>
-      <?php echo $producto['descripcion'] ?>
-    </div>
+  <a href="index.php">Atras</a>
+
+  <?php if( count($items) == 0 ) { ?>
+
+    <h3>Tu carrito está vacío</h3>
+
+  <?php } else { ?>
+
+    <h2>Tu carrito</h2>
+
+    <?php var_dump($items) ?>
+    
   <?php } ?>
+
 </body>
 </html>
