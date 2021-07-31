@@ -9,3 +9,4 @@ function data_productos_getall() {
     [ 'id' => 5, 'descripcion' => 'Teclado', 'precio' => 1000 ],
   ];
 }
+
