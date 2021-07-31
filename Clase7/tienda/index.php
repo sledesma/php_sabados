@@ -3,6 +3,7 @@
 session_start();
 
 require_once 'controllers/productos.php';
+require_once 'controllers/admin.php';
 
 if(isset($_GET['action'])) {
 
@@ -20,6 +21,14 @@ if(isset($_GET['action'])) {
       session_unset();
       session_destroy();
       header('Location: index.php');
+
+    case 'admin':
+      controllers_admin_inicio();
+      break;
+
+    case 'admin_login':
+      controllers_admin_login();
+      break;
 
     default:
       header('Location: index.php');
