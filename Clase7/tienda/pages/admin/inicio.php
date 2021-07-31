@@ -8,6 +8,19 @@
 </head>
 <body>
   <h2>Administrador</h2>
+  <a href="">Cerrar sesión</a>
+  <div>
+    <h4>Carga de datos</h4>
+    <div><button>Nuevo producto</button></div>
+    <div>
+      <form action="index.php">
+        <input type="hidden" name="admin_carga_masiva">
+        Seleccione el CSV a cargar:
+        <input type="file" name="archivoCSV">
+        <button>Realizar carga masiva</button>
+      </form>
+    </div>
+  </div>
   <table>
     <thead>
       <tr>
