@@ -19,4 +19,16 @@ function controllers_productos_vercarrito() {
 
 function controllers_productos_agregaralcarrito($id) {
   echo 'Agregando al carrito el producto '.$id;
+
+  if(
+    !isset($_SESSION['carrito']) || 
+    !is_array($_SESSION['carrito'])) {
+
+    $_SESSION['carrito'] = [];
+
+  }
+  array_push($_SESSION['carrito'], $id);
+
+  // TODO: Que soporte multiples productos y reporte el precio total. Estructura del carrito:
+  // [ id, precio, cantidad, total ]
 }

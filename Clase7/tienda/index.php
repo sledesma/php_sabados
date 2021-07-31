@@ -16,6 +16,11 @@ if(isset($_GET['action'])) {
       controllers_productos_agregaralcarrito($_GET['id']);
       break;
 
+    case 'cerrar_sesion':
+      session_unset();
+      session_destroy();
+      header('Location: index.php');
+
     default:
       header('Location: index.php');
       break;

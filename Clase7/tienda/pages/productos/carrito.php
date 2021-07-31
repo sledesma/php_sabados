@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <a href="index.php">Atras</a>
+  <a href="index.php">Atras</a> | <a href="index.php?action=cerrar_sesion">Vaciar carrito</a>
 
   <?php if( count($items) == 0 ) { ?>
 
@@ -18,7 +18,7 @@
     <h2>Tu carrito</h2>
 
     <?php var_dump($items) ?>
-    
+
   <?php } ?>
 
 </body>
