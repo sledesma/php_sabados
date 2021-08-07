@@ -1,1 +1,3 @@
 ¿Que hacer en estos 50'?
+* Ejemplos con $_SESSION
+* Ponerme a hacer cosas
