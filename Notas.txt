@@ -1,0 +1,22 @@
+1 - Introducción a PHP / Modelo Cliente-Servidor / Instalar XAMPP / Variables y operadores
+2 - Estructuras de Control
+3 - Arrays
+4 - Funciones e inclusión de código
+5 - Funciones y manejo de archivos
+6 - Bases de datos
+7 - Sesiones
+
+ALGORITMOS: Formas de usar las estructuras de datos
+Operadores
+Condicionales (if, if-else, if-else-if, switch)
+Bucles (while, for, foreach)
+Inclusión de código
+
+ESTRUCTURAS DE DATOS: Todo lo que me permita organizar la información
+Tipos de dato de PHP
+Variables
+Arrays
+Funcion
+Base de datos
+Sesiones
+
