@@ -46,7 +46,7 @@ switch($_SERVER['REQUEST_METHOD']) {
             login_user($_POST['username']);
           }
           header('Location: index.php');
-          break;
+          break; 
 
       }
     }
